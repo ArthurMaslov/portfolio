@@ -66,6 +66,13 @@ body {
 .nav__social {
     gap: 20px;
     display: flex;
+    position: relative;
+    z-index: 3;
+}
+
+.nav__logo {
+    position: relative;
+    z-index: 1;
 }
 
 .nav__links a {
@@ -452,6 +459,7 @@ footer {
     background-color: #cc4040;
     display: block;
     position: absolute;
+    transition: 0.5s;
 }
 
 .hamburger span:nth-child(1) {
@@ -464,4 +472,20 @@ footer {
 
 .hamburger span:nth-child(3) {
     bottom: 0;
+}
+
+
+.hamburger_active span:nth-child(1) {
+    top: 9px;
+    transform: rotate(45deg);
+}
+
+.hamburger_active span:nth-child(2) {
+    top: 9px;
+    opacity: 0;
+}
+
+.hamburger_active span:nth-child(3) {
+    bottom: 9px;
+    transform: rotate(-45deg);
 }

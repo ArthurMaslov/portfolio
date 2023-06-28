@@ -1,9 +1,10 @@
-@media(max-width:1014px){
-    .skils__elements{
+@media(max-width:1014px) {
+    .skils__elements {
         justify-content: center;
     }
 }
- @media(max-width:992px) {
+
+@media(max-width:992px) {
     .header__elements {
         flex-direction: column-reverse;
         gap: 32px;
@@ -33,8 +34,9 @@
         align-items: flex-start;
     }
 }
-@media(max-width:802px){
-    .footer_elements{
+
+@media(max-width:802px) {
+    .footer_elements {
         flex-direction: column-reverse;
         gap: 0;
         text-align: center;
@@ -45,12 +47,34 @@
 
 @media (max-width:768px) {
     .nav__links {
-        display: none;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(31, 31, 31);
+        position: fixed;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+    .nav__links_active{
+        transform: translateX(0%);
+        
+    }
+
+    .nav__links a {
+        color: #cc4040;
+        font-size: 24px;
+        font-weight: 900;
     }
 
     .nav__social a {
         font-size: 28px;
-
+        color:#cc4040;
     }
 
     .hamburger {
@@ -79,12 +103,14 @@
     .about-me__elements p {
         padding: 16px 12px;
     }
-    .skils__icon{
+
+    .skils__icon {
         height: 100px;
         width: 100%;
     }
-    .skils__item{
-       max-width: 100%;
+
+    .skils__item {
+        max-width: 100%;
     }
 }
 
