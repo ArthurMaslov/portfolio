@@ -39,7 +39,7 @@
         </div>
     </nav>
 
-     <header id="header">
+    <header id="header">
         <div class="container">
             <div class="header__elements">
                 <div class="header__info">
@@ -58,7 +58,7 @@
         </div>
     </header>
 
-   <section class="about-me" id="about-me">
+    <section class="about-me" id="about-me">
         <div class="container">
             <h2>
                 Обо мне
@@ -127,13 +127,13 @@
     </section>
 
 
-      <section class="works" id="works">
+    <section class="works" id="works">
         <div class="container">
             <h2>
                 Работы
             </h2>
             <div class="works__elements">
-                <a class="works__item" href="">
+                <a class="works__item" href="https://arthurmaslov.github.io/top3/">
                     <div class="works__wrapper"></div>
                     <div class="works__content">
                         <h3>
@@ -145,39 +145,42 @@
         </div>
     </section>
 
-   <section class="contacts" id="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <h2>Контакты</h2>
             <h3>Оставьте заявку и я свяжусь с вами в течении дня!</h3>
             <hr>
-            <form action="#">
+            <form target="send" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdr2RnTDq5keWEKez-M-lzO8mfiDR5PdP48G2V3deDVNUNEyQ/formResponse">
+                <iframe name="send"></iframe>
+                <div class="send-wrapper">Ваша заявкя отправлена!</div>
                 <label for="name">Ваше имя</label>
-                <input type="text" placeholder="Введите имя" id="name">
+                <input type="text" placeholder="Введите имя" id="name" name="entry.1216970749" required>
                 <label for="email">Ваша почта</label>
-                <input type="email" placeholder="Введите почту" id="email">
+                <input type="email" placeholder="Введите почту" id="email" name="entry.1177947647" required>
                 <label for="massage">Комментарий</label>
-                <textarea id="massage" placeholder="Комментарий"></textarea>
+                <textarea id="massage" placeholder="Комментарий" name="entry.1576412690"></textarea>
                 <button type="submit">Отправить</button>
             </form>
         </div>
     </section>
-     <footer>
+    <footer>
         <div class="container">
-          <div class="footer_elements">
-            <a href="" class="footer_logo">
-              <img src="./img/nav__logo.svg" alt="">
-            </a>
-            <p>
-              Все права защищены и принадлежат Маслову Артуру.
-            </p>
-            <div class="footer_social">
-              <a class="footer_social_TG" href=""><i class="fa-brands fa-telegram"></i></a>
-              <a class="footer_social_Whatsapp" href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <div class="footer_elements">
+                <a href="" class="footer_logo">
+                    <img src="./img/nav__logo.svg" alt="">
+                </a>
+                <p>
+                    Все права защищены и принадлежат Маслову Артуру.
+                </p>
+                <div class="footer_social">
+                    <a class="footer_social_TG" href="https://t.me/MSLFF_31"><i class="fa-brands fa-telegram"></i></a>
+                    <a class="footer_social_Whatsapp" href="https://wa.me/905348833505"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
             </div>
-          </div>
         </div>
-      </footer> 
-      <script src="./js/script.js"></script>
+    </footer>
+    <script src="./js/script.js"></script>
     <script src="https://kit.fontawesome.com/10ea4c7fef.js" crossorigin="anonymous"></script>
 </body>
 

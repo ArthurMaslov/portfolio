@@ -365,6 +365,7 @@ form {
     display: flex;
     flex-direction: column;
     margin: auto;
+    position: relative;
 }
 
 label {
@@ -408,6 +409,7 @@ button {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 900;
     font-size: 20px;
+    cursor: pointer;
 }
 
 footer {
@@ -488,4 +490,32 @@ footer {
 .hamburger_active span:nth-child(3) {
     bottom: 9px;
     transform: rotate(-45deg);
+}
+
+iframe {
+    display: none;
+}
+
+.send-wrapper {
+    background-color: #cc4040;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #d6d6d6;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.send-wrapper_active {
+    opacity: 100%;
+    visibility: visible;
 }
